@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Port Scanner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Web Port Scanner</h1>
+    <form method="post">
+      <input name="url" type="text" placeholder="Enter a website like google.com">
+      <input type="submit" value="Scan">
+    </form>
+
+    <!-- <div class="output">
+      {% for line in result %}
+        {{ line|safe }}
+      {% endfor %}
+    </div> -->
+  </div>
+</body>
+</html>
